@@ -13,6 +13,8 @@ const styles1 = {
   margin: '20px auto'
 }
 
+
+
 const Game = () => {
   const [board, setBoard] = useState(Array(9).fill(null))
   const [xIsNext, setXisNext] = useState(true)
@@ -60,13 +62,15 @@ const Game = () => {
   const renderMoves = () => {
     return (
       <button
+        className="bg-blue-500 hover:bg-blue-300 text-white font-bold py-1 px-2 outline-none focus:outline-none rounded transform hover:scale-105 motion-reduce:transform-none"
         type="button"
         onClick={() => {
           setBoard(Array(9).fill(null))
           setXisNext(true)
         }}
       >
-        New Game
+        <b />
+        Start Game
       </button>
     )
   }
