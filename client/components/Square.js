@@ -20,7 +20,9 @@ const winStyle = {
 }
 const Square = ({ value, onClick, winnerLine }) => {
   return (
-    <button type="button" style={winnerLine ? winStyle : style} onClick={onClick}>
+    <button type="button" style={winnerLine ? winStyle : style} onClick={onClick}
+      className="bg-blue-500 hover:bg-blue-300 font-bold py-1 px-2 outline-none focus:outline-none transform hover:scale-99 motion-reduce:transform-none"
+    >
       {value}
     </button>
   )

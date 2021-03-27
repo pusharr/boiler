@@ -70,7 +70,7 @@ const Game = () => {
         }}
       >
         <b />
-        Start Game
+        Play more
       </button>
     )
   }
